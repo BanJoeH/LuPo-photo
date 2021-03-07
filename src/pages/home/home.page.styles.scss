@@ -1,0 +1,42 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background: url(../../assets/images/landscape0.jpeg) no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 200vh;
+    width: 95%;
+    align-items: center;
+    margin-top: 30px;
+
+    .homepage-title {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin: 0;
+      height: 100vh;
+
+      .homepage-name {
+        font-family: "Dancing Script", cursive;
+        font-size: 5rem;
+        font-weight: 100;
+        margin: 0;
+      }
+      .homepage-subtitle {
+        font-size: 3rem;
+        margin: 0;
+      }
+    }
+  }
+}
