@@ -54,160 +54,159 @@ import "./portfolio.page.styles.scss";
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-      <h1 className="portfolio-title">Portfolio</h1>
+      <h1 className="portfolio-title box-shadow">Portfolio</h1>
+
       <div className="portfolio-picture-container">
-        <div className="portrait">
-          <img src={portrait12} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape1} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait0} alt="" />
-        </div>
-        <div className="normal">
-          <img src={landscape2} alt="" />
-        </div>
-        <div className="normal">
-          <img src={landscape3} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape4} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape5} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait11} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape6} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape7} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape36} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait9} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape9} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait10} alt="" />
-        </div>
-        <div className="normal">
-          <img src={landscape10} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape11} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait7} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape12} alt="" />
-        </div>
-        <div className="landscape">
+        <div className="landscape grow">
           <img src={landscape13} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape14} alt="" />
+        <div className="portrait grow">
+          <img src={portrait12} alt="" />
         </div>
-        <div className="portrait">
-          <img src={portrait8} alt="" />
+        <div className="landscape grow">
+          <img src={landscape1} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape15} alt="" />
+        <div className="portrait grow">
+          <img src={portrait0} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape16} alt="" />
+        <div className="normal grow">
+          <img src={landscape2} alt="" />
         </div>
-        <div className="normal">
-          <img src={landscape29} alt="" />
+        <div className="normal grow">
+          <img src={landscape3} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape17} alt="" />
+        <div className="landscape grow">
+          <img src={landscape4} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape18} alt="" />
+        <div className="landscape grow">
+          <img src={landscape5} alt="" />
         </div>
-        <div className="portrait">
-          <img src={portrait6} alt="" />
+        <div className="portrait grow">
+          <img src={portrait11} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape19} alt="" />
+        <div className="landscape grow">
+          <img src={landscape6} alt="" />
         </div>
-        <div className="normal">
-          <img src={landscape20} alt="" />
+        <div className="landscape grow">
+          <img src={landscape7} alt="" />
         </div>
-        <div className="landscape">
-          <img src={landscape21} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape22} alt="" />
-        </div>
-        <div className="normal">
-          <img src={landscape23} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait5} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape24} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape25} alt="" />
-        </div>
-        <div className="normal">
-          <img src={landscape26} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait4} alt="" />
-        </div>
-        <div className="normal">
-          <img src={landscape27} alt="" />
-        </div>
-
-        <div className="portrait">
-          <img src={portrait3} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape30} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape31} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape32} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait2} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape33} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape34} alt="" />
-        </div>
-        <div className="landscape">
-          <img src={landscape35} alt="" />
-        </div>
-        <div className="portrait">
-          <img src={portrait1} alt="" />
-        </div>
-        <div className="landscape">
+        <div className="landscape grow">
           <img src={landscape36} alt="" />
         </div>
-        <div className="landscape">
+        <div className="portrait grow">
+          <img src={portrait9} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape9} alt="" />
+        </div>
+        <div className="portrait grow">
+          <img src={portrait10} alt="" />
+        </div>
+        <div className="normal grow">
+          <img src={landscape10} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape11} alt="" />
+        </div>
+        <div className="portrait grow">
+          <img src={portrait7} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape12} alt="" />
+        </div>
+
+        <div className="portrait grow">
+          <img src={portrait8} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape15} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape16} alt="" />
+        </div>
+        <div className="normal grow">
+          <img src={landscape29} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape17} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape18} alt="" />
+        </div>
+        <div className="portrait grow">
+          <img src={portrait6} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape19} alt="" />
+        </div>
+        <div className="normal grow">
+          <img src={landscape20} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape21} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape22} alt="" />
+        </div>
+
+        <div className="portrait grow">
+          <img src={portrait5} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape24} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape25} alt="" />
+        </div>
+        <div className="normal grow">
+          <img src={landscape26} alt="" />
+        </div>
+        <div className="portrait grow">
+          <img src={portrait4} alt="" />
+        </div>
+        <div className="normal grow">
+          <img src={landscape27} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape14} alt="" />
+        </div>
+        <div className="portrait grow">
+          <img src={portrait3} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape30} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape31} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape32} alt="" />
+        </div>
+        <div className="portrait grow">
+          <img src={portrait2} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape33} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape34} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape35} alt="" />
+        </div>
+        <div className="normal grow">
+          <img src={landscape23} alt="" />
+        </div>
+        <div className="landscape grow">
+          <img src={landscape36} alt="" />
+        </div>
+        <div className="landscape grow">
           <img src={landscape37} alt="" />
         </div>
-        <div className="normal">
+        {/* <div className="normal grow">
           <img src={landscape28} alt="" />
-        </div>
-        <div className="landscape">
+        </div> */}
+        <div className="landscape grow">
           <img src={landscape0} alt="" />
         </div>
       </div>

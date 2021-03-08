@@ -6,7 +6,7 @@ import aboutImage from "../../assets/images/portrait0.png";
 const About = () => {
   return (
     <div className="about-container">
-      <h1 className="about-title">About</h1>
+      <h1 className="about-title box-shadow">About</h1>
       <div className="about-content">
         <div className="about-image">
           <img src={aboutImage} alt="about pic" />
