@@ -22,6 +22,7 @@
         -moz-transform: scale(2);
         -ms-transform: scale(2);
         transform: scale(2);
+        z-index: 1;
       }
       @media screen and (max-width: 800px) {
         -webkit-transition: transform 0.3s;
@@ -33,6 +34,7 @@
           -moz-transform: scale(1.25);
           -ms-transform: scale(1.25);
           transform: scale(1.25);
+          z-index: 1;
         }
       }
     }
