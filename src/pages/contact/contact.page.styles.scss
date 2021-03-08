@@ -17,81 +17,107 @@ $main-color: black;
   .contact-content {
     width: 80%;
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
+    align-items: center;
     @media screen and (max-width: 800px) {
+      flex-direction: column;
       width: 90%;
+      margin-top: 50px;
     }
 
-    .contact-form {
+    .contact-group {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      width: 50%;
-      @media screen and (max-width: 800px) {
-        width: 100%;
-      }
 
-      .group {
-        position: relative;
-        margin: 0;
-
-        .form-input {
-          background: none;
-          background-color: white;
-          color: $sub-color;
-          font-size: 18px;
-          padding: 10px 10px 10px 5px;
-          display: block;
-          width: 100%;
-          border: none;
-          border-radius: 0;
-          border-bottom: 1px solid $sub-color;
-          margin: 25px 0;
-
-          &:focus {
-            outline: none;
-          }
-
-          &:focus ~ .form-input-label {
-            @include shrinkLabel();
-          }
-        }
-
-        .form-input-label {
-          color: $sub-color;
-          font-size: 16px;
-          font-weight: normal;
-          position: absolute;
-          pointer-events: none;
-          left: 5px;
-          top: 10px;
-          transition: 300ms ease all;
-
-          &.shrink {
-            @include shrinkLabel();
-          }
-        }
-      }
-      .button {
-        min-width: 165px;
-        width: auto;
-        height: 50px;
-        letter-spacing: 0.5px;
-        line-height: 50px;
-        padding: 0 35px 0 35px;
-        font-size: 15px;
-        background-color: #efecec;
-
-        border: none;
-        cursor: pointer;
+      .contact-form {
         display: flex;
-        justify-content: center;
-
-        &:hover {
-          background-color: white;
-
-          border: 1px solid #efecec;
+        flex-direction: column;
+        width: 90%;
+        @media screen and (max-width: 800px) {
+          width: 100%;
         }
+
+        .group {
+          position: relative;
+          margin: 0;
+
+          .form-input {
+            background: none;
+            background-color: white;
+            color: $sub-color;
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $sub-color;
+            margin: 25px 0;
+
+            &:focus {
+              outline: none;
+            }
+
+            &:focus ~ .form-input-label {
+              @include shrinkLabel();
+            }
+          }
+
+          .form-input-label {
+            color: $sub-color;
+            font-size: 16px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            transition: 300ms ease all;
+
+            &.shrink {
+              @include shrinkLabel();
+            }
+          }
+        }
+        .button {
+          min-width: 165px;
+          width: auto;
+          height: 50px;
+          letter-spacing: 0.5px;
+          line-height: 50px;
+          padding: 0 35px 0 35px;
+          font-size: 15px;
+          background-color: #efecec;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+
+          @media screen and (max-width: 800px) {
+            margin-bottom: 20px;
+          }
+
+          &:hover {
+            background-color: white;
+
+            border: 1px solid #efecec;
+          }
+        }
+      }
+    }
+    .contact-image {
+      display: flex;
+      height: auto;
+      width: 100%;
+
+      img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+      }
+      @media screen and (max-width: 800px) {
+        display: none;
       }
     }
   }

@@ -13,4 +13,10 @@
 
   margin: 50px;
   border-radius: 2px;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    width: 90%;
+    padding: 50px 20px;
+    margin: 20px 0;
+  }
 }

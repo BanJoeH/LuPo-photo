@@ -4,6 +4,7 @@ import About from "./pages/about/about.page";
 import Portfolio from "./pages/portfolio/portfolio.page";
 import "./app.styles.scss";
 import ContactPage from "./pages/contact/contact.page";
+import Footer from "./components/footer/footer.component";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Portfolio />
       <ContactPage />
+      <Footer />
     </div>
   );
 }

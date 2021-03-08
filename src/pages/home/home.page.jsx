@@ -3,7 +3,7 @@ import "./home.page.styles.scss";
 
 const HomePage = () => {
   return (
-    <div className="homepage-container">
+    <div className="homepage-container" id="homepage">
       <div className="hero">
         <div className="homepage-title">
           <div className="box-shadow">

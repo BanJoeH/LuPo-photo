@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 import "./contact.page.styles.scss";
+import contactImage from "../../assets/images/portrait11.jpeg";
 
 const ContactPage = () => {
   const [userInput, setUserInput] = useState({
@@ -19,7 +20,7 @@ const ContactPage = () => {
     setUserInput({ ...userInput, [name]: value });
   };
   const toastifySuccess = () => {
-    toast.success("Form sent!", {
+    toast.success("Thanks for getting in contact!", {
       position: "bottom-left",
       autoClose: 5000,
       hideProgressBar: true,
@@ -62,52 +63,58 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <h1 className="box-shadow">Contact</h1>
       <div className="contact-content">
-        <h2 className="contact-title">Wanna know more?</h2>
-        <form className="contact-form" onSubmit={onSubmit}>
-          <div className="group">
-            <input
-              className="form-input"
-              name="name"
-              onChange={handleChange}
-              value={name}
-              required
-            />
+        <div className="contact-group">
+          <h2 className="contact-title">Get in contact here</h2>
 
-            <label className="form-input-label">Full Name</label>
-          </div>
+          <form className="contact-form" onSubmit={onSubmit}>
+            <div className="group">
+              <input
+                className="form-input"
+                name="name"
+                onChange={handleChange}
+                value={name}
+                required
+              />
 
-          <div className="group">
-            <input
-              className="form-input"
-              name="email"
-              onChange={handleChange}
-              value={email}
-              required
-            />
+              <label className="form-input-label">Full Name</label>
+            </div>
 
-            <label className="form-input-label">Email</label>
-          </div>
+            <div className="group">
+              <input
+                className="form-input"
+                name="email"
+                onChange={handleChange}
+                value={email}
+                required
+              />
 
-          <div className="group">
-            <textarea
-              className="form-input"
-              name="msg"
-              onChange={handleChange}
-              value={msg}
-              required
-            />
+              <label className="form-input-label">Email</label>
+            </div>
 
-            <label className="form-input-label">
-              What would you like to say
-            </label>
-          </div>
+            <div className="group">
+              <textarea
+                className="form-input"
+                name="msg"
+                onChange={handleChange}
+                value={msg}
+                required
+              />
 
-          <input type="submit" className="button" value="Submit" />
-        </form>
-        <ToastContainer />
+              <label className="form-input-label">
+                What would you like to say?
+              </label>
+            </div>
+
+            <input type="submit" className="button" value="Submit" />
+          </form>
+          <ToastContainer />
+        </div>
+        <div className="contact-image">
+          <img src={contactImage} alt="contact pic" />
+        </div>
       </div>
     </div>
   );
