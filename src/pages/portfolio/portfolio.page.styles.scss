@@ -9,9 +9,14 @@
     width: 80%;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr));
-    grid-auto-rows: 25vmin;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+    grid-auto-rows: 10vw;
     grid-auto-flow: row dense;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr));
+      grid-auto-rows: 25vmin;
+    }
 
     .grow {
       -webkit-transition: transform 0.5s;
